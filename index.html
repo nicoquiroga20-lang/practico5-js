@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>God Gaming</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-blue-100 text-gray-800 font-sans text-center">
+
+    <nav class="bg-white shadow-sm p-4 flex justify-between items-center ">
+        <h1 class="text-xl font-bold">God Gaming</h1>
+        <div class="space-x-4">
+            <button id="btn-catalogo" class="hover:text-gray-500">Catalogo</button>
+            <button id="btn-favoritos" class="hover:text-gray-500">Mis Favoritos</button>
+            <button id="btn-admin" class="hover:text-gray-500">Administracion</button>
+        </div>
+    </nav>
+
+    <main class="max-w-6xl mx-auto p-6">
+        <section id="vista-catalogo" class="block">
+            <h2 class="text-2xl mb-6">Stock</h2>
+            <div id="grid-articulos" class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            </div>
+        </section>
+
+        <section id="vista-favoritos" class="hidden">
+            <h2 class="text-2xl mb-6">Mis Articulos Guardados</h2>
+            <div id="lista-favoritos" class="space-y-4">
+                </div>
+        </section>
+
+        <section id="vista-admin" class="hidden">
+            <h2 class="text-2xl mb-6">Gestión de Inventario</h2>
+            <form id="form-articulo" class="bg-white p-6 shadow-sm rounded mb-8">
+                <button type="submit" class="bg-black text-white px-4 py-2 rounded">Guardar Artículo</button>
+            </form>
+            </section>
+
+        <div id="modal-detalle" class="hidden fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
+            <div class="bg-white p-8 rounded max-w-md w-full">
+                <button id="btn-cerrar-modal" class="mt-4 text-sm underline">Cerrar</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
