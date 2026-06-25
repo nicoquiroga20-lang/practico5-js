@@ -76,7 +76,7 @@ function ventanaDeDetalle(articulo) {
             <p class="text-sm text-gray-500">
                 <span class="font-semibold text-gray-700">Estado:</span> 
                 <span class="${articulo.activo ? 'text-green-600' : 'text-red-600'} font-medium">
-                    ${articulo.activo ? 'Acitvo' : 'Inactivo'}
+                    ${articulo.activo ? 'Activo' : 'Inactivo'}
                 </span>
             </p>
         </div>
